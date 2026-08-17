@@ -1,8 +1,8 @@
 import express from "express";
 import { Router } from "express";
-import {createVessel} from "../controller/vessel.controller.js"
-const router1=Router()
+import {createVoyage} from "../controller/voyage.controller.js"
+const router2=Router()
 
-router1.post("/",createVessel)
+router2.post("/",createVoyage)
 
-export {router1}
+export {router2}

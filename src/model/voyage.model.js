@@ -22,4 +22,6 @@ const voyageSchema=new mongoose.Schema({
     }
 },{timestamps:true})
 
-export default Voyage=mongoose.model("Voyage",voyageSchema)
+const Voyage=mongoose.model("Voyage",voyageSchema);
+
+export default Voyage

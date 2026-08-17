@@ -17,4 +17,7 @@ app.get("/",(req,res)=>{
 import {router1} from "./routes/vessel.routes.js"
 app.use('/vessels',router1);
 
+import { router2 } from "./routes/voyage.routes.js";
+app.use('/voyages',router2)
+
 export {app}

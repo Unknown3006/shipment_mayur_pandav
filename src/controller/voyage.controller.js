@@ -19,10 +19,17 @@ const createVoyage=async(req,res)=>{
         })
 
         res.status(201).json({
-            id=
+            id:voyage._id,
+            vessel_id:voyage.vessel_id,
+            voyage_number:voyage.voyage_number,
+            destination:voyage.destination,
+            status:voyage.status,
+            effective_route:[]
         })
 
     } catch (error) {
-        
+        console.log("Error",error);
     }
 }
+
+export {createVoyage}
